@@ -40,4 +40,5 @@ dependencies {
     implementation 'com.google.android.exoplayer:exoplayer:2.11.3'
     implementation 'com.squareup.retrofit2:retrofit:2.8.0'
     implementation 'com.squareup.retrofit2:converter-moshi:2.8.0'
+    implementation 'com.github.andyoom:citypicker:v1.0.4'
 }
