@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Weather</string>
+    <string name="city">武侯区</string>
+    <string name="temperature">24℃</string>
+    <string name="first">首页</string>
+    <string name="discover">发现</string>
+    <string name="mine">我</string>
+    <string name="view">TODO</string>
+    <string name="tool">TODO</string>
 </resources>
