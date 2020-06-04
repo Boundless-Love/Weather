@@ -11,34 +11,48 @@ android {
         versionCode 1
         versionName "1.0"
 
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "androidx.support.test.runner.AndroidJUnitRunner"
     }
 
-    buildTypes {
+    signingConfigs {
+        //签名秘钥相关
         release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            storeFile file("CitySelectDemo.jks")
+            storePassword "123456"
+            keyAlias "CitySelectDemo"
+            keyPassword "123456"
         }
     }
-    compileOptions {
-        sourceCompatibility = 1.8
-        targetCompatibility = 1.8
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            debuggable true//是否允许调试
+            minifyEnabled true//是否开启代码混淆
+            zipAlignEnabled true//是否优化apk文件，将apk文件中未压缩的数据在4个字节边界上对齐
+            shrinkResources true//是否去除无用资源，任何在编译过程中没有用到的资源或者代码都会被删除，可以有效减小apk体积
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        //此处设置是为了方便debug版本也能和正式版本一样使用定位功能
+        debug {
+            signingConfig signingConfigs.release
+            buildConfigField "boolean", "ISDEBUG", "true"
+            debuggable true
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
     }
-
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-
-    implementation 'androidx.appcompat:appcompat:1.1.0'
-    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
-    implementation 'androidx.recyclerview:recyclerview:1.1.0'
-    implementation 'com.google.android.material:material:1.1.0'
-    implementation 'com.google.android.exoplayer:exoplayer:2.11.3'
-    implementation 'com.squareup.retrofit2:retrofit:2.8.0'
-    implementation 'com.squareup.retrofit2:converter-moshi:2.8.0'
-    implementation 'com.github.andyoom:citypicker:v1.0.4'
+//    implementation 'com.android.support:appcompat-v7:26.1.0'
+    //拼音
+    implementation 'com.belerweb:pinyin4j:2.5.0'
+    //gson
+    implementation 'com.google.code.gson:gson:2.8.5'
+    //高德地图定位
+    compile 'com.amap.api:location:latest.integration'
+    implementation 'com.android.support:support-annotations:28.0.0'
+    implementation 'androidx.fragment:fragment:1.2.3'
 }

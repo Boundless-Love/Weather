@@ -1,4 +1,4 @@
-package CitySelect.bean;
+package cityselectdemo.CitySelect.bean;
 
 public class BaseBean {
      public int code = 0;

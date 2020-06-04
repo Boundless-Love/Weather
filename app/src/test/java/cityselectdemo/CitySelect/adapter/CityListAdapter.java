@@ -1,4 +1,4 @@
-package CitySelect.adapter;
+package cityselectdemo.CitySelect.adapter;
 
 import android.content.Context;
 import android.text.TextUtils;

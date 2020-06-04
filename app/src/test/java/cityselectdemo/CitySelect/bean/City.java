@@ -1,4 +1,4 @@
-package CitySelect.bean;
+package cityselectdemo.CitySelect.bean;
 
 import java.util.Objects;
 

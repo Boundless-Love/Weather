@@ -1,4 +1,4 @@
-package CitySelect;
+package cityselectdemo.CitySelect;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -12,16 +12,16 @@ import com.amap.api.location.AMapLocation;
 import com.amap.api.location.AMapLocationClient;
 import com.amap.api.location.AMapLocationClientOption;
 import com.amap.api.location.AMapLocationListener;
-import com.honor.cityselectdemo.CitySelect.adapter.CityListAdapter;
-import com.honor.cityselectdemo.CitySelect.bean.AreasBean;
-import com.honor.cityselectdemo.CitySelect.bean.City;
-import com.honor.cityselectdemo.CitySelect.bean.CityPickerBean;
-import com.honor.cityselectdemo.CitySelect.bean.LocateState;
-import com.honor.cityselectdemo.CitySelect.util.GsonUtil;
-import com.honor.cityselectdemo.CitySelect.util.PinyinUtils;
-import com.honor.cityselectdemo.CitySelect.util.ReadAssetsFileUtil;
-import com.honor.cityselectdemo.CitySelect.widget.SideLetterBar;
-import com.honor.cityselectdemo.R;
+import cityselectdemo.CitySelect.adapter.CityListAdapter;
+import cityselectdemo.CitySelect.bean.AreasBean;
+import cityselectdemo.CitySelect.bean.City;
+import cityselectdemo.CitySelect.bean.CityPickerBean;
+import cityselectdemo.CitySelect.bean.LocateState;
+import cityselectdemo.CitySelect.util.GsonUtil;
+import cityselectdemo.CitySelect.util.PinyinUtils;
+import cityselectdemo.CitySelect.util.ReadAssetsFileUtil;
+import cityselectdemo.CitySelect.widget.SideLetterBar;
+import cityselectdemo.R;
 
 import java.util.ArrayList;
 import java.util.Collections;

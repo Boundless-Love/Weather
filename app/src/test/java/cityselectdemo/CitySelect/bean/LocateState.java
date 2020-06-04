@@ -1,4 +1,4 @@
-package CitySelect.bean;
+package cityselectdemo.CitySelect.bean;
 
 public class LocateState {
     public static final int LOCATING = 111;
