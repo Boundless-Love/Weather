@@ -31,7 +31,8 @@
         app:endIconMode="clear_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView">
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:startIconDrawable="@drawable/ic_person_outline_black_24dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -50,7 +51,8 @@
         app:endIconMode="password_toggle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_username">
+        app:layout_constraintTop_toBottomOf="@+id/login_username"
+        app:startIconDrawable="@drawable/ic_verified_user_black_24dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
