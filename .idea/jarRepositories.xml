@@ -12,6 +12,16 @@
       <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
     </remote-repository>
     <remote-repository>
+      <option name="id" value="maven" />
+      <option name="name" value="maven" />
+      <option name="url" value="https://maven.aliyun.com/repository/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven2" />
+      <option name="name" value="maven2" />
+      <option name="url" value="https://maven.aliyun.com/repository/google/" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="BintrayJCenter" />
       <option name="name" value="BintrayJCenter" />
       <option name="url" value="https://jcenter.bintray.com/" />
@@ -22,14 +32,19 @@
       <option name="url" value="https://dl.google.com/dl/android/maven2/" />
     </remote-repository>
     <remote-repository>
-      <option name="id" value="maven" />
-      <option name="name" value="maven" />
-      <option name="url" value="https://maven.aliyun.com/repository/public/" />
+      <option name="id" value="E:\Android\sdk\extras\google\m2repository" />
+      <option name="name" value="E:\Android\sdk\extras\google\m2repository" />
+      <option name="url" value="file:/$PROJECT_DIR$/../../sdk/extras/google/m2repository" />
     </remote-repository>
     <remote-repository>
-      <option name="id" value="maven2" />
-      <option name="name" value="maven2" />
-      <option name="url" value="https://maven.aliyun.com/repository/google/" />
+      <option name="id" value="E:\Android\sdk\extras\android\m2repository" />
+      <option name="name" value="E:\Android\sdk\extras\android\m2repository" />
+      <option name="url" value="file:/$PROJECT_DIR$/../../sdk/extras/android/m2repository" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="E:\Android\sdk\extras\m2repository" />
+      <option name="name" value="E:\Android\sdk\extras\m2repository" />
+      <option name="url" value="file:/$PROJECT_DIR$/../../sdk/extras/m2repository" />
     </remote-repository>
   </component>
 </project>
