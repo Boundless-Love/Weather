@@ -18,6 +18,7 @@ import cn.edu.scujcc.weather.R;
 
 public class loginActivity extends AppCompatActivity {
     private Button loginbutton;
+    private Button register;
     private userLab lab = userLab.getInstance();
     private Handler handler = new Handler() {
         @Override
@@ -55,11 +56,17 @@ public class loginActivity extends AppCompatActivity {
 
         loginbutton = findViewById(R.id.login_button);
         loginbutton.setOnClickListener(v -> {
-            TextInputLayout username = findViewById(R.id.login_username);
+            TextInputLayout username = findViewById(R.id.r_username);
             TextInputLayout password = findViewById(R.id.password);
             String u = username.getEditText().getText().toString();
             String p = password.getEditText().getText().toString();
             lab.login(u,p,handler);
         });
+        register = findViewById(R.id.zhuce);
+        register.setOnClickListener(v ->{
+            Intent intent =new Intent (loginActivity.this,registerActivity.class);
+            startActivity(intent);
+        });
     }
+
 }
