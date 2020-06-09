@@ -17,7 +17,7 @@ public class RetrofitClient {
     public static Retrofit getInstance() {
         if (INSTANCE == null){
             INSTANCE = new Retrofit.Builder()
-                    .baseUrl("http://47.115.34.11:8080")  //改为自己的阿里云服务器IP
+                    .baseUrl("http://47.112.134.96:8080")
                     .addConverterFactory(MoshiConverterFactory.create())
                     .build();
         }
