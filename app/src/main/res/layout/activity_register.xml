@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="cn.edu.scujcc.registerActivity">
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/r_username"
 
@@ -27,6 +28,7 @@
             android:imeOptions="actionNext"
             android:inputType="text" />
     </com.google.android.material.textfield.TextInputLayout>
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/password"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -90,4 +92,81 @@
             android:imeOptions="actionNext"
             android:inputType="number" />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/xingbie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="性别"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iphone" />
+
+    <RadioGroup
+        android:id="@+id/r_g"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/xingbie"
+        app:layout_constraintStart_toEndOf="@+id/xingbie"
+        app:layout_constraintTop_toTopOf="@+id/xingbie">
+
+        <RadioButton
+            android:id="@+id/nan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="男性" />
+
+        <RadioButton
+            android:id="@+id/nv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="女性" />
+
+        <RadioButton
+            android:id="@+id/waixinren"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="外星人" />
+    </RadioGroup>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/r_birthday"
+
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:hint="生日"
+        app:endIconDrawable="@drawable/ic_baseline_assignment_24"
+        app:endIconMode="custom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/r_g"
+        app:startIconDrawable="@drawable/ic_baseline_cake_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/zhuc"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="立即注册"
+        android:textColor="#009688"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/r_birthday" />
 </androidx.constraintlayout.widget.ConstraintLayout>
