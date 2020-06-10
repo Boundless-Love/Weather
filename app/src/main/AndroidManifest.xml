@@ -12,7 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name="cn.edu.scujcc.registerActivity"></activity>
+        <activity android:name="cn.edu.scujcc.registerActivity"
+            android:theme="@style/AppTheme.NoBar"></activity>
         <activity android:name=".MainActivity"></activity>
         <activity
             android:name="cn.edu.scujcc.loginActivity"
