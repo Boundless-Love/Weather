@@ -80,6 +80,7 @@ public class userLab {
             @Override
             public void onResponse(Call<User> call, Response<User> response) {
                 Log.d(TAG, "用户成功注册!");
+                Log.d(TAG, "返回新的数据：" + response.raw());
                 Log.d(TAG, "返回数据是：" + response.body());
                 Message msg = new Message();
                 msg.what = USER_REGISTER_SUCCESS;

@@ -12,17 +12,20 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name="cn.edu.scujcc.registerActivity"
-            android:theme="@style/AppTheme.NoBar"></activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name="cn.edu.scujcc.welcomeActivity"
+            android:theme="@style/AppTheme.no"> <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter></activity>
+        <activity
+            android:name="cn.edu.scujcc.registerActivity"
+            android:theme="@style/AppTheme.NoBar" />
+        <activity android:name=".MainActivity" />
         <activity
             android:name="cn.edu.scujcc.loginActivity"
             android:theme="@style/AppTheme.NoBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 
